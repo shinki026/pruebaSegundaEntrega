@@ -1,0 +1,70 @@
+{{>header}}
+	<div class="container">
+
+	<div class="alert alert-primary" role="alert">
+		Bienvenido a la pagina de Crear cursos.
+	</div>
+
+
+	<form action="/prueba" method="post">
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="id">Identificador del curso</label>
+   			<input type="number" class="form-control" id="id" placeholder="Identificador" name="id" required="true">
+ 			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="nombrecurso">Nombre del Curso</label>
+    		<input type="text" class="form-control" id="nombrecurso" name="nombrecurso" placeholder="nombre del curso" required="true">
+  			</div>			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="descripcion">Descripción del curso</label>
+   			<input type="text" class="form-control" id="descripcion" placeholder="Descripción" name="descripcion" required="true">
+ 			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="valor">Valor del curso</label>
+    		<input type="number" class="form-control" id="valor" placeholder="Valor del curso" name="valor" required="true">
+ 			</div>
+		</div>	
+	</div>
+
+  	<div class="row">
+  		<div class="col-sm-6">
+  			<div class="form-group">
+  				<div class="input-group-prepend">
+  				<label class="input-group-text" for="modalidad">Modalidad</label>		
+  				</div>
+  				<select class="custom-select" id="modalidad" name="modalidad">
+    			<option </option>
+    			<option value="virtual">Virtual</option>
+    			<option value="presencial">Presencial</option>
+  				</select>
+  			</div>
+  		</div>
+
+  		<div class="col-sm-6">
+  			<div class="form-group">
+    		<label for="horas">Intesidad horaria</label>
+    		<input type="number" class="form-control" id="horas" placeholder="Intensidad" name="horas">
+ 			</div>
+  		</div>	 	
+    </div>
+
+  	<button type="submit" class="btn btn-primary">Crear</button>
+	</form>
+
+	</div>
+
+{{>footer}}

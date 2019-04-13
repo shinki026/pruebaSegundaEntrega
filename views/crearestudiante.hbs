@@ -1,0 +1,68 @@
+{{>header}}
+	<div class="container">
+
+	<div class="alert alert-primary" role="alert">
+		Bienvenido a la pagina de Inscripcion de Estudiantes.
+	</div>
+
+
+	<form action="/prueba2" method="post">
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="id">Documento</label>
+   			<input type="number" class="form-control" id="documento" placeholder="Documento" name="documento" required="true">
+ 			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="nombrecurso">Nombre</label>
+    		<input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre" required="true">
+  			</div>			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="descripcion">Correo</label>
+   			<input type="text" class="form-control" id="correo" placeholder="Email" name="correo" required="true">
+ 			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="valor">Telefono</label>
+    		<input type="number" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required="true">
+ 			</div>
+		</div>	
+	</div>
+
+  	<div class="row">
+  		<div class="col-sm-6">
+  			<div class="form-group">
+  				<div class="input-group-prepend">
+  				<label class="input-group-text" for="curso">Cursos</label>		
+  				</div>
+
+  				<select class="custom-select" id="curso" name="curso">
+    			
+  			</div>
+  		</div>
+    			<option </option>
+    			{{{listarcursosactivos}}}	
+  				</select>
+
+
+  		 	
+    </div>
+
+  	<button type="submit" class="btn btn-primary">Inscribir</button>
+	</form>
+
+	</div>
+
+	
+{{>footer}}

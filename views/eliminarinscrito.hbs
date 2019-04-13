@@ -1,0 +1,43 @@
+{{>header}}
+<div class="container">
+  
+<div class="alert alert-primary" role="alert">
+    Bienvenido a la pagina para eliminar Estudiantes.
+</div>
+
+<form action="/prueba3" method="post">
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+    		<label for="id">Documento</label>
+   			<input type="number" class="form-control" id="documento" placeholder="Documento" name="documento" required="true">
+ 			</div>
+		</div>
+
+  	<div class="row">
+  		<div class="col-sm-6">
+  			<div class="form-group">
+  				<div class="input-group-prepend">
+  				<label class="input-group-text" for="curso">Cursos</label>		
+  				</div>
+
+  				<select class="custom-select" id="curso" name="curso">
+    			
+  			</div>
+  		</div>
+    			<option </option>
+    			{{{listarcursostodos}}}	
+  				</select>
+
+
+  		 	
+    </div>
+
+  	<button type="submit" class="btn btn-primary">Eliminar</button>
+	</form>
+
+	</div>
+
+	
+{{>footer}}

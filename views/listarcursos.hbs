@@ -1,0 +1,56 @@
+{{>header}}
+	<div class="container">
+
+		<div>
+		<h2 align="center">
+			Listar cursos para administrador
+		</h2>
+		{{{listarcursos}}}
+		</div>
+
+		<br>
+
+		<div>
+		<h2>
+			Actualizar estado de un curso
+		</h2>	
+
+	
+		<form action="/listarcursos" method="post">
+		
+		<div class="row">
+  		<div class="col-sm-6">
+  			<div class="form-group">
+  				<div class="input-group-prepend">
+  				<label class="input-group-text" for="curso">Cursos</label>		
+  				</div>
+
+  				<select class="custom-select" id="curso" name="curso">
+    			
+    			<option </option>
+    			{{{listarcursosactivos}}}	
+  				</select>
+  			</div>
+  		</div>
+  		</div>
+  	  </div>
+
+
+  	  <button class="btn btn-primary" type="submit" name="boton1">Button</button>
+		{{{cambioestadocurso curso }}}
+	</form>
+
+		<div>
+		<h2 align="center">
+			Listar cursos para interesados
+		</h2>
+
+		{{{listarcursosinteresado}}}
+	</div>
+
+
+	</div>
+
+
+	
+{{>footer}}
